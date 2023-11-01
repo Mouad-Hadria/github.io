@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Skyward Bound Data Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+		<style>
+	.background-div {
+    background-image: url("./Assets/Delta_Air_Lines\ Background_Min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	width: 100%;
+    height: 45vh;}
+
+	.overlay {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    background-color: rgba(0, 0, 0, 0.6);}
+
+	.text {
+	line-height: 1.5;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Adjust the value as per your preference */
+}
+
+		  </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<h1><a href="../../index.html">M.HADRIA</a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="special">
+								<a href="#menu" class="menuToggle"><span>Menu</span></a>
+								<div id="menu" cool>
+									<ul>
+										<li><a href="../../index.html">Home</a></li>
+										<li><a href="../../Projects_Interface/index.html">Projects</a></li>
+										<li><a href="../../About_Me.html">About Me</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+				<!-- Main -->
+			  <div class="background-div" style="margin: auto;">
+					<!-- Content within the div -->
+				<div class="overlay">
+					<div class="text">
+						Skyward Bound: Analyzing Delta Air Lines' Pre and Post-Merger Performance with Northwest Airlines
+					</div></div>
+			  </div>
+					<article id="main">
+
+						<section class="wrapper style5">
+							<div class="inner">
+                                <section>
+									<h2>INTRODUCTION:</h2>
+									<p>
+										In our previous endeavor, titled <a href="../Data_Analysis_of_San_Francisco_International_Airport/index.html" style="color: blue;">Data Analysis of San Francisco International Airport</a>, we delved into different aviation collaborations,
+										with a particular focus on the merger between Delta Airlines and Northwest Airlines.
+										This merger, announced on April 14, 2008, brought the two airlines together to form the world's largest airline, operating under the name Delta.
+										By the beginning of 2010, all operations previously handled by Northwest Airlines had successfully transitioned to the Delta brand.
+										This crucial milestone in 2010 serves as the starting point for our comprehensive analysis of Delta Airlines' performance following the merger.
+									</p>
+									<p>
+										During our previous undertaking, we faced the challenge of lacking comprehensive Key Performance Indicators (KPIs) and metrics that would enable us to accurately evaluate the success of the merger.
+										Our evaluation primarily relied on basic benchmarks and limited data available at the time.
+										However, for the current project, "Skyward Bound," we have acquired extensive datasets that offer valuable insights into financial and operational metrics encompassing various aspects of Delta Air Lines.
+										These metrics include revenues, air traffic statistics, employee productivity, and much more.
+									</p>
+									<p>
+										The primary objective of "Skyward Bound" is to shed light on the impact of the Delta-Northwest merger on the overall performance of the airline.
+										By meticulously analyzing a wide range of essential metrics,
+										we aim to provide valuable insights into the transformation that took place and the outcomes achieved by Delta Airlines as a result of this momentous merger.
+										Through this comprehensive analysis, we seek to offer a deeper understanding of the merger's implications and its significance for the airline industry.
+									</p>
+								</section>
+								<hr>
+								<section>
+									<h2>Data Source and Preparation:</h2>
+									<p>
+										We utilized multiple datasets sourced from <a href="https://web.mit.edu/airlinedata/www/default.html" style="color: blue;"> ADP </a>, which were well-organized and allowed us to select the specific variables needed for our desired Key Performance Indicators (KPIs) and metrics. The data cleaning process involved various steps,
+										including data casting, pivoting, and unpivoting the raw data. Additionally, we identified usable records and handled data formatting to ensure data quality.
+									</p>
+									<p>
+										To streamline the data cleaning and preparation, we employed both Excel and Power BI. Excel was particularly helpful for initial data manipulation tasks, while Power BI played a crucial role in creating an informative dashboard. This dashboard beautifully showcases the cleaned and processed data, providing visual representations of the insights derived from the datasets.
+									</p>
+								</section>
+                                <hr>
+								<section>
+									<h2>DASHBOARD:</h2>
+									<p>
+										<span class="image fit">
+											<img src="./Assets/Dashboard.png">
+										</span>
+									</p>
+									<h4>KPIs Categories</h4>
+									<div class="table-wrapper">
+										<table>
+											<tr>
+												<th>Category</th>
+												<th>KPIs</th>
+											</tr>
+											<tr>
+												<td>Performance</td>
+												<td>RPM And ASM Evolution, Post-Merger Average Load Factor</td>
+											</tr>
+											<tr>
+												<td>Operations</td>
+												<td>Change in Block Hours and Airborne Hours</td>
+											</tr>
+											<tr>
+												<td>Finance</td>
+												<td>Revenue vs. Operating Expenses, Annual Net Income Fluctuations, Operating Margin, Net Profit Margin, Operating Expenses Ratio</td>
+											</tr>
+											<tr>
+												<td>Employee Productivity</td>
+												<td>Average Annual ASMs Produced per Employee</td>
+											</tr>
+											<tr>
+												<td>Employee Compensation</td>
+												<td>Annual Wages And Salaries</td>
+											</tr>
+										</table>
+									</div>
+								</section>
+								<hr>
+								<section>
+									<h2>CONCLUSION:</h2>
+									<p>
+										In conclusion, our analysis of Delta Airlines' KPIs across various aspects reveals impressive numbers and notable growth ratios. This comprehensive evaluation allowed us to accurately assess the success of Delta Air Lines' merger with Northwest Airlines. The data presented on the dashboard unequivocally illustrates why Delta Airlines stands as one of the most successful airlines in the United States. The positive performance indicators demonstrate the efficacy of the merger and highlight Delta's position as a prominent player in the industry. This project reaffirms the strategic value and benefits that the merger brought to Delta Airlines, further solidifying its position as a thriving and accomplished airline.
+									</p>
+								</section>
+							</div>
+						</section>
+					</article>
+									
+				<!-- Footer -->
+				<footer id="footer" style="background-color: #030e17">
+					<span style="padding-bottom: 22%;"></span>
+					<ul class="icons">
+					<li><img src="../../images/email 1.png"  style="width: 30px; height: 30px; margin-right: auto;cursor: pointer;" onclick="sendEmail()"></li>
+					<li><img src="../../images/github 1.png"  style="width: 30px; height: 30px; margin-right: auto;cursor: pointer;" onclick="window.location.href='https://github.com/MouadMh';"></li>
+					<li><img src="../../images/indeed (1).png"  style="width: 30px; height: 30px; margin-right: auto;cursor: pointer;;" onclick="window.location.href='https://example.com';"></li>
+					</ul>
+				<ul class="copyright">
+				<li>&copy;2023 MOUAD HADRIA</li>
+				</ul>
+			</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+			<script>
+				function sendEmail() {
+				  window.location.href = "mailto:mouadhadria.da@gmail.com";
+				}
+			</script>
+
+	</body>
+</html>

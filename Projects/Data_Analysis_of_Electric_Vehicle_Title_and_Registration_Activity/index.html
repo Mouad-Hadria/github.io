@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Charging Ahead Data Anlysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+		<style>
+	.background-div {
+    background-image: url("./Assets/Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	width: 100%;
+    height: 45vh;}
+
+	.overlay {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    background-color: rgba(0, 0, 0, 0.6);}
+
+	.text {
+	line-height: 1.5;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Adjust the value as per your preference */
+}
+    a {
+  color: blue;
+}
+
+		  </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<h1><a href="../../index.html">M.HADRIA</a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="special">
+								<a href="#menu" class="menuToggle"><span>Menu</span></a>
+								<div id="menu" cool>
+									<ul>
+										<li><a href="../../index.html">Home</a></li>
+										<li><a href="../../Projects_Interface/index.html">Projects</a></li>
+										<li><a href="../../About_Me.html">About Me</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+				<!-- Main -->
+			  <div class="background-div" style="margin: auto;">
+					<!-- Content within the div -->
+				<div class="overlay">
+					<div class="text">
+						CHARGING AHEAD: ANALYZING ELECTRIC VEHICLE TITLE AND REGISTRATION ACTIVITIES THROUGH WASHINGTON STATE OF LICENSING
+					</div></div>
+			  </div>
+					<article id="main">
+
+						<section class="wrapper style5">
+							<div class="inner">
+								<section>
+									<h2>DATA SOURCE AND PREPARATION:</h2>
+									<p>
+										This project is dependent on data obtained from <a href="https://data.wa.gov/">data.gov</a>, with the most recent update being as of September 15, 2023.
+										It's crucial to acknowledge that these datasets may undergo future updates. However,
+										They furnish us with an extensive datasets containing multiple vital variables crucial for attaining our research objectives.
+									</p>
+									<p>
+										Key variables within the datasets include the transaction identification number, transaction type,
+										location information pinpointing the primary vehicle owner's whereabouts, and comprehensive details describing the attributes of the registered electric vehicles.
+									</p>
+									<p>
+										During the data preparation phase, our primary focus shifted towards exploring the structures of the datasets and understanding how they are interconnected.
+										This phase played a pivotal role in laying the groundwork for a thorough analysis and making it easier to query complex data. Additionally,
+										it holds great importance in addressing the relevant research questions.
+										Through careful organization of the data, we improve our capacity to discover valuable insights, detect patterns,
+										and create engaging visual representations that effectively convey the narrative of electric vehicle registrations within our datasets.
+									</p>
+									<p>
+										The source code for SQL Server, encompassing all stages of the project's data analysis, 
+										is available on my <a>GitHub</a> in two formats: complete <a href="https://github.com/MouadMh/Washington-State-Department-of-Licensing/tree/main/SQL%20Server/SQL%20Server%20Files">SQL files</a>
+										and a <a href="../../../../Project 3/Notebook/Jupyter Notebook Viewer.htm">SQL notebook</a> for enhanced representation.
+									</p>
+								</section>
+                                <hr>
+								<section>
+									<h2>In-Depth Analysis:</h2>
+									<ul>
+										<li>
+											<h4>Mapping electric vehicle transactions throughout the united states</h4>
+											<span class="image fit">
+												<img src="./Assets/Geographical_distribution.png">
+											</span>
+											<p>
+												Our dataset comprises more than 800,000 transactions of diverse types. The count of transactions plays a pivotal role in shaping our upcoming insights. Our map visualization vividly illustrates the counties of residence for vehicle owners who conducted these transactions.
+												Each green dot on the map represents a county, with the size of the dot corresponding to the number of transactions. King emerges as the most prominent county in terms of transaction numbers, followed by Snohomish and Pierce.
+											</p>
+											<p>
+												It's noteworthy that, in the United States, drivers are generally required to register their vehicles in their state of residence. This explains why 99.6% of the transactions took place within Washington state. However, there are exceptions,
+												such as active-duty military personnel on assignment in other states and college students attending school in different states, resulting in transactions reported from 48 states and Puerto Rico (U.S. territory).
+											</p>
+										</li>
+									    <li>
+											<h4>The top brands presence in the number of electric vehicles</h4>
+											<span class="image fit">
+												<img src="./Assets/Car_brand_popularity.png">
+											</span>
+											<p>
+												As previously mentioned, the Washington State Department of Licensing documented more than 800,000 transactions involving electric cars, even though the total count of electric vehicles did not exceed 184,000 units.
+												Within this specific segment of electric cars, we identified a total of 40 different brands. To maintain clarity, we have opted to highlight the top 8 brands.
+												At the forefront stands Tesla, boasting approximately 80,000 electric cars, which accounts for 43.49% of the entire electric car market.
+												Following byNissan and Chevrolet. What's truly captivating is the diverse spectrum of brands within the electric car market, representing countries such as the United States, Germany, Japan, and South Korea.
+											</p><br>
+										</li>
+										<li>
+											<h4>The prevalence of electric car models in terms of transaction volume</h4>
+											<span class="image fit">
+												<img src="./Assets/Top_electric_models.png">
+											</span>
+											<p>
+											After consulting leading car brands, it's intriguing to analyze which electric car models have garnered the most transactions. For a clearer visual representation, we've selected the top 6 models,
+											among which we find the top 3 car brands featured in the previous visualization: Tesla (comprising Model 3, Model Y, and Model S), Chevrolet (Bolt EV and Volt), and Nissan (Leaf)
+										    </p>
+											<p>
+												The Leaf model shows a significant increase in transaction volume, while the Volt model maintains a consistent presence over the years. Notably, Chevrolet released the Bolt EV in nationwide and international markets in 2017.
+												This model quickly gained recognition within the Washington State Department of Licensing. By 2022, both Chevrolet models appear to have achieved similar number of transactions.
+											</p>
+											<p>
+												Tesla, on the other hand, made its initial mark with the Model S and significantly expanded its presence since 2017, primarily due to the Model 3's remarkable surge in transaction volume.
+												What's particularly remarkable is the successful launch of the Model Y. Since its introduction, it outperformed the Chevrolet models in 2020 and demonstrated a consistent upward trend through 2022.
+											</p>
+											<blockquote>
+												For the year-based visuals, we have intentionally excluded data from the year 2023 to facilitate more accurate Year-over-Year (YOY) analysis.
+											</blockquote>
+										</li>
+										<li>
+											<h4>Analyzing the Distribution of PHEV and BEV Transactions</h4>
+											<span class="image fit">
+												<img src="./Assets/Electric_vehicle_transactions_over_Time.png">
+											</span>
+											<p>
+												Battery Electric Vehicles (BEVs) solely rely on electric power through electric motors, drawing energy from rechargeable batteries, resulting in zero tailpipe emissions, and environmental friendliness due to the absence of internal combustion engines.
+												Where the Plug-in Hybrid Electric Vehicles (PHEVs) combine an internal combustion engine with an electric motor and rechargeable battery, allowing limited electric-only driving before transitioning to the internal combustion engine, 
+												providing flexibility with the convenience of electrical recharging for both all-electric and extended range driving.
+											</p>
+											<p>
+												Between 2010 and 2012, both the PHEV and BEV vehicles recorded approximately equal transaction numbers. However, from that point onward, BEV vehicles have consistently seen a notable increase in transactions, particularly since 2017, offering valuable insights into the electric car market's evolution.
+											</p>
+										</li>
+										<li>
+											<h4>Exploring Vehicle Eligibility for Alternative Fuel Status</h4>
+											<span class="image fit">
+												<img src="./Assets/Eligibility_status.png">
+											</span>
+											<p>
+												Analyzing Clean Alternative Fuel Vehicle (CAFV) Eligibility can be used to inform policy making and sales strategies. In summary, vehicles with an electric range exceeding 30 miles qualify for the Clean Alternative Fuel Vehicle Eligibility category,
+												while those with less than 30 miles are designated as Not Eligible due to limited battery range. Vehicles with unreported electric range data are categorized as Unknown.
+												Conducting a comprehensive analysis of electric range within other categories may reveal valuable insights
+											</p>
+										</li>
+											<h4>Comparing Electric Car Distribution by Range for BEV and PHEV</h4>
+											<p>
+											<span class="image fit">
+												<img src='./Assets/Electric_range_group_vehicle_Count.png'>
+											</span>
+											<p>
+												The categories of BEV and PHEV appear to be the most suitable classifications for examining the distribution of electric cars based on their electric range. It is noteworthy that, during the in-depth analysis phase, we identified a significant proportion of unreported electric range data,
+												accounting for approximately 40% of the total dataset. Nonetheless, this still leaves us with over 109,000 reported electric ranges, which remains a substantial sample size to draw meaningful conclusions from. This clustered column chart will help us understand better the following violin plots.
+											</p>
+											</p>
+											<p>
+											<span class="image fit">
+												<img src="./Assets/Electric_range_distribution_violin.png">
+											</span>
+											<p>
+												The violin plots serve as invaluable tools, effectively depicting the characteristics of electric range distributions and providing valuable insights. Wider sections of the violins signify areas where electric vehicles are densely clustered, while narrower sections indicate regions with fewer electric vehicles.
+										    </p>
+											<p>
+												It's evident from the plots that PHEV exhibits a wide section in the 0 to 50 electric range miles, while BEV has a comparatively thin section. This observation aligns with what we previously observed in the clustered column chart, where PHEV had over 37,000 electric vehicles and BEV had nearly 24 electric vehicles.
+												The prior visual aids in a more nuanced understanding of Electric Car Distribution by Range.
+											</p>
+											<p>
+												Furthermore, the data points for electric range tend to be more tightly concentrated around the mean (Black dot) for PHEV compared to BEV. This phenomenon can be quantified in statistical terms by examining the standard deviation, which measures the extent to which data points deviate from the mean.
+												The lower standard deviation in PHEV electric range (17.38) when compared to BEV (76.88) substantiates our initial observations, enriching our comprehension of the data distribution.
+											</p>
+											<blockquote>
+												Due to the substantial volume of reported electric range records, we encountered limitations with Power BI's violin plots. As a result, we found it necessary to utilize Python packages for analysis. The Python code used is also available on my <a href="https://github.com/MouadMh/Washington-State-Department-of-Licensing/blob/main/Python/Electric%20car%20distribution%20by%20range.ipynb">GitHub repository</a>.
+											</blockquote>
+									</ul>
+								</section>
+								<hr>
+								<section>
+									<h2>Conclusion :</h2>
+									In this data analysis endeavor, we harnessed the wealth of information from the Washington State Licensing Department with a meticulous approach. Leveraging both transaction counts and electric vehicle data, we uncovered valuable insights.
+									Our analysis method allowed us to successfully identify the foremost brands, models, and electric vehicle categories, distinguishing between PHEV and BEV.
+									Furthermore, we gained a comprehensive understanding of how electric cars are distributed across various electric ranges, guided by these categorical distinctions.This project lays a sturdy foundation for ongoing explorations,
+									opening doors to examine the various factors influencing electric car adoption. Policy-making and sales strategies, for instance, come into sharper focus as potential areas for further inquiry. Through this project,
+									we have paved the way for deeper investigations and a more profound understanding of this dynamic field.
+								</section>
+							</div>
+						</section>
+					</article>
+									
+				<!-- Footer -->
+				<footer id="footer" style="background-color: #030e17">
+					<span style="padding-bottom: 22%;"></span>
+					<ul class="icons">
+					<li><img src="../../images/email 1.png"  style="width: 30px; height: 30px; margin-right: auto;cursor: pointer;" onclick="sendEmail()"></li>
+					<li><img src="../../images/github 1.png"  style="width: 30px; height: 30px; margin-right: auto;cursor: pointer;" onclick="window.location.href='https://github.com/MouadMh';"></li>
+					<li><img src="../../images/indeed (1).png"  style="width: 30px; height: 30px; margin-right: auto;cursor: pointer;;" onclick="window.location.href='https://example.com';"></li>
+					</ul>
+				<ul class="copyright">
+				<li>&copy;2023 MOUAD HADRIA</li>
+				</ul>
+			</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+			<script>
+				function sendEmail() {
+				  window.location.href = "mailto:mouadhadria.da@gmail.com";
+				}
+			</script>
+
+	</body>
+</html>
