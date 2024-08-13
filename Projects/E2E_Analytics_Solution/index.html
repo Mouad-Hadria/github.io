@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>E2E Data Analytics Solution</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+		<style>
+	.background-div {
+    background-image: url("./Assets/Fabric.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	width: 100%;
+    height: 45vh;}
+
+	.overlay {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    background-color: rgba(0, 0, 0, 0.6);}
+
+	.text {
+	line-height: 1.5;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Adjust the value as per your preference */
+}
+
+		  </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<h1><a href="../../index.html">M.HADRIA</a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="special">
+								<a href="#menu" class="menuToggle"><span>Menu</span></a>
+								<div id="menu" cool>
+									<ul>
+										<li><a href="../../index.html">Home</a></li>
+										<li><a href="../../Projects_Interface/index.html">Projects</a></li>
+										<li><a href="../../About_Me.html">About Me</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+				<!-- Main -->
+			  <div class="background-div" style="margin: auto;">
+					<!-- Content within the div -->
+				<div class="overlay">
+					<div class="text">
+						Scalable Data Analytics Solution for Retail Sales Performance
+					</div></div>
+			  </div>
+					<article id="main">
+
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<section>
+									<h2>PROJECT OVERVIEW</h2>
+									<p>
+										The project focuses on building an end-to-end (E2E) data analytics solution to track the sales performance of bike retail store. The solution is designed to scale,
+										providing broader business insights and facilitating the integration of artificial intelligence (AI) capabilities to unlock the full potential of business growth.
+										The solution was delivered using Microsoft Fabric to ensure it meets the business needs, including building a semantic model that serves as a data warehouse using the Lakehouse Medallion Architecture.
+									</p>
+								</section>
+								<hr>
+								<section>
+									<h2>BUISNIESS ANALYSIS</h2>
+									<ul>
+										<li>
+											<h4>Overview of Business Needs</h4>
+											<p>
+												A bicycle retail store has experienced rapid business growth, leading to increased complexity in traditional data reporting methods. To address this, the store has opted to invest in a smart data analytics solution that is user-friendly,
+												promotes collaboration between technical and non-technical teams, and can seamlessly incorporate AI capabilities.
+											</p>
+                                            <p>The store plans a phased transition, initially implementing key tools to monitor sales performance. Once these tools are in place, they will expand the solution to encompass additional business needs, leveraging AI to drive further insights.</p>
+											</p>
+										</li>
+										<li>
+											<h4>Approach</h4>
+											<p>
+												After thoroughly assessing the bicycle retail store's business requirements, we decided to develop the project using Microsoft Fabric. This choice is grounded in Fabric's ability to offer a comprehensive and integrated analytics environment that enhances collaboration between data professionals and business users.
+												Fabric seamlessly supports all stages of the data lifecycle, including ingestion, storage, processing, and analysis within a unified platform
+											</p>
+											<p>
+												Microsoft Fabric provides a strong foundation and scalability for this project. It includes a wide array of essential tools, such as data engineering, data integration, data warehousing, real-time intelligence, data science, and business intelligence. By leveraging Fabric,
+												we simplify our operations by eliminating the need for multiple services from different vendors. The platform's single, user-friendly interface simplifies setup, management, and usage, with optimized experiences and tools designed for various user roles.
+											</p>
+											<p>
+												Moreover, Microsoft Fabric delivers a unified Software-as-a-Service (SaaS) solution, with all data stored in an open format within OneLake. This central repository is accessible to all analytics engines on the platform, offering scalability, cost-efficiency, and remote accessibility.
+											</p>
+										</li>
+										<li>
+											<h4>Key Findings</h4>
+											<br>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th><b>Business Needs</b></th>
+													<th><b>Microsoft Fabric Features</b></th>
+													<th><b>Solution Impact</b></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Creating an intelligent data analytics solution that is easily accessible to both technical and non-technical users</td>
+													<td>Microsoft Fabric provides multiple approaches to accomplish tasks, supporting both no-code and code-based solutions for collaboration</td>
+													<td>Empowers broader data access and collaboration</td>
+												</tr>
+												<tr>
+													<td>Starting with essential tools to track sales performance</td>
+													<td>Microsoft Fabric Data Factory, Synpase Data Engineering, Power Bi Services</td>
+													<td>Facilitating the delivery of a comprehensive E2E data analytics solution for tracking sales performance.</td>
+												</tr>
+												<tr>
+													<td>Seeking for AI integration capabilities</td>
+													<td>Microsoft Fabric Data Science Service</td>
+													<td>Enhanced AI integration</td>
+												</tr>
+												<tr>
+													<td>Expanding the data analytics solution's capacity in the future</td>
+													<td>Microsoft Fabric is SaaS-based data analytics platform</td>
+													<td>Flexibly scale resources up or down to accommodate evolving business requirements</td>
+												</tr>
+
+										</table>
+										</li>
+									</ul>
+								</section>
+                                <hr>
+								<section>
+                                    <h2>BUSINESS SOLUTION</h2>
+									<h4>Solution Architecture</h4>
+									<p>
+										To optimize development time and costs while ensuring reusability and scalability, we carefully studied and selected the <b>Medallion Architecture</b> for our solution.
+										Data lakehouses in Microsoft Fabric are built on the Delta Lake format, which natively supports ACID (Atomicity, Consistency, Isolation, Durability) transactions.
+										Within this framework, the Medallion Architecture is a recommended data design pattern used to logically organize data to enhance quality as it progresses through different stages.
+										The architecture comprises three layers: bronze (raw data), silver (validated data), and gold (enriched data), each representing increasing levels of data quality.
+									</p>
+									<p>
+										This <b>multi-hop</b> architecture allows data to move between layers as needed, ensuring data reliability and consistency through various validation and transformation processes.
+										By adopting this architecture, we guarantee that data is securely stored, making it easier and faster to analyze. This approach meets the primary needs of reusability and scalability, providing a robust foundation for the intelligent data analytics solution.
+									</p>
+									<h4>Solution tasks flow</h4>
+									<span class="image fit">
+										<img src="./Assets/Task_Flow.png" loading="lazy">
+									</span>
+									<ul>
+										<li><b>Data Ingestion</b></li>
+										<br>
+										<p>
+											The necessary business data is currently stored in Azure Blob Storage. The business owners plan to transition to Microsoft Fabric's OneLake as their primary data store in the future. Therefore, instead of using the OneLake shortcut, we will implement a data pipeline.
+										<br><br>
+											Given that the data ingestion methodology will change in the near future, we will access the data using a shared access signature with periodic validity to comply with data security and governance policies. This data pipeline will also be configured to serve as our extract,
+											transform, load (ETL) data pipeline once other solution components are created and configured.
+										</p>
+										<li><b>Bronze Data & Data Exploratory</b></li>
+										<br>
+										<p>	We load our extracted data into the bronze lakehouse layer with minimal modifications. This approach is advantageous as we move through the Medallion layers, ensuring that both raw and processed data are available to meet the diverse needs of all teams.<br><br>
+											Conducting a data exploration task was crucial for understanding the ingested data. Using PySpark notebooks, we generated basic insights and performed data analysis.
+										</p>
+										<li><b>Initial Process & Silver Data</b></li>
+										<br>
+										<p>
+											Further transformations were carried out using PySpark notebooks, representing a critical midpoint in the data lifecycle. The transformed data was stored as Delta tables to ensure accessibility through both PySpark engines and SQL engines. Additionally,
+											we ensured that the PySpark code was reusable, as it will be orchestrated within our ETL pipeline.
+										</p>
+										<li><b>Further Transform & Gold Data</b></li>
+										<br>
+										<p>
+											In these tasks, we concentrated on creating a star schema model, ensuring the fact and dimension tables were well-defined to capture sales performance insights while accommodating future data integration scenarios. The resulting data was used to build a robust semantic model with managed relationships,
+											serving as a data warehouse solution and providing the foundation for the reporting tasks.
+										</p>
+										<li><b>Sales Reporting</b></li>
+										<br>
+										<p>
+											The business owners have stated they require a dashboard to track the sales revenue and quantity in monthly basis and able to track the sales revenue by the top 5 purchased items all with Year and Items Filters.
+										</p>
+										<h4>Tasks Items</h4>
+										<span class="image fit">
+											<br>
+											<img src="./Assets/Itemsets.png" loading="lazy">
+										</span>
+										<blockquote>As we can see, both the Bronze Data and Silver Data tasks contain no specific items. This is because they rely on the Lakehouse Files and Tables containers, which cannot be exclusively assigned to any single task.</blockquote>
+										
+									</ul>
+
+                                </section>
+								<hr>
+								<section>
+									<h2>RESULTS</h2>
+									<span class="image fit">
+										<img src="./Assets/Dashboard.png" loading="lazy">
+									</span>
+								</section>
+                                <hr>
+                                <section>
+									<h2>CONCLUSION</h2>
+									<p>
+										This project successfully achieved its objective of building an E2E data analytics solution to track the sales performance of the bike retail store. The solution was designed with scalability in mind, providing comprehensive business insights and laying the groundwork for future integration of AI.
+									</p>
+									<p>
+										The key result of the project was the detailed tracking of the store's sales performance, which has already delivered significant value to the business. Overcoming challenges such as creating efficient ETL pipelines, ensuring compatibility among solution components, managing incremental loads and slowly changing dimensions,
+										and maintaining robust data security governance were crucial to the project's success.
+									</p>
+									<p>
+										Looking ahead, the next steps will focus on leveraging Microsoft Fabric's AI capabilities to deliver deeper business insights and opportunities. Additionally, the project will expand to include the creation of data marts and real-time intelligence analytics, further enhancing the business's data-driven decision-making capabilities.
+									</p>
+								</section>
+							</div>
+						</section>
+					</article>
+									
+				<!-- Footer -->
+				<footer id="footer" style="background-color: #030e17">
+					<span style="padding-bottom: 22%;"></span>
+					<ul class="icons">
+					<li><img src="../../images/email 1.png"  style="width: 30px; height: 30px; margin-right: auto;cursor: pointer;" onclick="sendEmail()" loading="lazy"></li>
+					<li><img src="../../images/github 1.png"  style="width: 30px; height: 30px; margin-right: auto;cursor: pointer;" onclick="window.location.href='https://github.com/Mouad-Hadria';" loading="lazy"></li>
+					<li><img src="../../images/indeed (1).png"  style="width: 30px; height: 30px; margin-right: auto;cursor: pointer;;" onclick="window.location.href='https://profile.indeed.com/p/mouadh-pq7mpsz';" loading="lazy"></li>
+					</ul>
+				<ul class="copyright">
+				<li>&copy;2023 MOUAD HADRIA</li>
+				</ul>
+			</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js" defer></script>
+			<script src="../../assets/js/jquery.scrollex.min.js" defer></script>
+			<script src="../../assets/js/jquery.scrolly.min.js" defer></script>
+			<script src="../../assets/js/browser.min.js" defer></script>
+			<script src="../../assets/js/breakpoints.min.js" defer></script>
+			<script src="../../assets/js/util.js" defer></script>
+			<script src="../../assets/js/main.js" defer></script>
+			<script>
+				function sendEmail() {
+				  window.location.href = "mailto:mouadhadria.da@gmail.com";
+				}
+			</script>
+
+	</body>
+</html>
