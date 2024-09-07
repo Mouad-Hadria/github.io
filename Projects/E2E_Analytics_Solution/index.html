@@ -173,7 +173,7 @@
 											The necessary business data is currently stored in Azure Blob Storage. The business owners plan to transition to Microsoft Fabric's OneLake as their primary data store in the future. Therefore, instead of using the OneLake shortcut, we will implement a data pipeline.
 										<br><br>
 											Given that the data ingestion methodology will change in the near future, we will access the data using a shared access signature with periodic validity to comply with data security and governance policies. This data pipeline will also be configured to serve as our extract,
-											transform, load (ETL) data pipeline once other solution components are created and configured.
+											load, Transform (ELT) data pipeline once other solution components are created and configured.
 										</p>
 										<li><b>Bronze Data & Data Exploratory</b></li>
 										<br>
@@ -184,7 +184,7 @@
 										<br>
 										<p>
 											Further transformations were carried out using PySpark notebooks, representing a critical midpoint in the data lifecycle. The transformed data was stored as Delta tables to ensure accessibility through both PySpark engines and SQL engines. Additionally,
-											we ensured that the PySpark code was reusable, as it will be orchestrated within our ETL pipeline.
+											we ensured that the PySpark code was reusable, as it will be orchestrated within our ELT pipeline.
 										</p>
 										<li><b>Further Transform & Gold Data</b></li>
 										<br>
@@ -221,7 +221,7 @@
 										This project successfully achieved its objective of building an E2E data analytics solution to track the sales performance of the bike retail store. The solution was designed with scalability in mind, providing comprehensive business insights and laying the groundwork for future integration of AI.
 									</p>
 									<p>
-										The key result of the project was the detailed tracking of the store's sales performance, which has already delivered significant value to the business. Overcoming challenges such as creating efficient ETL pipelines, ensuring compatibility among solution components, managing incremental loads and slowly changing dimensions,
+										The key result of the project was the detailed tracking of the store's sales performance, which has already delivered significant value to the business. Overcoming challenges such as creating efficient ELT pipelines, ensuring compatibility among solution components, managing incremental loads and slowly changing dimensions,
 										and maintaining robust data security governance were crucial to the project's success.
 									</p>
 									<p>
